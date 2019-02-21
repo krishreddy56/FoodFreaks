@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FoodFreaks.master.cs" Inherits="FoodFreaks" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+        <style type="text/css">
+
+        .style1
+        {
+            font-size: xx-large;
+        }
+            .auto-style2 {
+                width: 1145px;
+            }
+            .auto-style3 {
+                width: 93px;
+            }
+            .auto-style4 {
+                width: 87px;
+            }
+            .auto-style5 {
+                width: 102px;
+            }
+            .style2
+            {
+                font-size: xx-large;
+                color: #006600;
+            }
+            .style3
+            {
+                color: #006600;
+            }
+    </style>
+    
+</head>
+<body background="images/DSC_0660.JPG">
+    <form id="form1" runat="server">
+    <div>
+           <table style="width: 103%;">
+                <tr>
+                    <td class="auto-style2"  style="text-align :center" >
+        <span class="style1">&nbsp;&nbsp; <span class="style3"><em><strong>FOOD FREAKS(F</strong></em></span></span><span 
+                            style="text-align: center"><span 
+            class="style2"><em><strong>f)</strong></em></span></span></td>
+                    <td class="auto-style3">
+                        <asp:LinkButton ID="lnkSignOut" runat="server" Font-Size ="Large" 
+                            OnClick="lnkSignOut_Click1" Font-Bold="False" Font-Italic="True" 
+                            Font-Overline="False" Font-Strikeout="False" Font-Underline="False" 
+                            ForeColor="#FF0066" style="text-decoration: underline">SignOut</asp:LinkButton>
+                    </td>
+                    <td class="auto-style4"><em style="text-align: center"><span 
+            class="style1">
+            <asp:LinkButton ID="lnkAboutUS" runat="server" OnClick="lnkAboutUS_Click" 
+                            Font-Size ="Large" ForeColor="#FF0066">AboutUs</asp:LinkButton>
+        </span></em></td>
+                    <td class="auto-style5"><em style="text-align: center"><span 
+            class="style1">
+            <asp:LinkButton ID="lnkContactUS" runat="server" OnClick="lnkContactUS_Click" 
+                            Font-Size ="Large" ForeColor="#FF0066">Contact Us</asp:LinkButton>
+        </span></em></td>
+                </tr>
+                
+            </table>
+           a<asp:ContentPlaceHolder id="head" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder id="body" runat="server">
+            
+            <p>
+                &nbsp;</p>
+            
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
